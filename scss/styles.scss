@@ -1,0 +1,11 @@
+@use 'variables' as v; // Importa las variables con un alias v
+@use 'mixins';
+@use 'reset';
+@use 'global';
+@use 'navbar';
+@use 'inicio';
+@use 'juegos';
+@use 'comunidad';
+@use 'top-juegos';
+@use 'contacto';
+@use 'footer';

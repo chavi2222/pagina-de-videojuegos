@@ -1,0 +1,74 @@
+@use 'variables' as v;
+
+.navbar {
+  background-color: v.$color-primary; // Usa la variable de color de fondo con el alias v
+  color: v.$color-white;
+  font-family: v.$font-family;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    li {
+      display: inline-block;
+
+      a {
+        color: v.$color-white;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: v.$color-accent;
+        }
+      }
+    }
+  }
+
+  .navbar-toggle {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      background-color: v.$color-primary;
+      color: v.$color-white;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+// Estilos adicionales para el menú en móviles
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: v.$color-primary;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  .navbar.active .navbar-links {
+    display: flex;
+  }
+}

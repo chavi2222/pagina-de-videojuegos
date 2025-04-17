@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunidad de Videojuegos - Comparte tus experiencias, comenta sobre juegos y conecta con otros jugadores.">
+    <meta name="keywords" content="comunidad, juegos, videojuegos, comentarios, interacción, foro, hilos, social">
+    <meta name="author" content="Tu Nombre">
+    <title>Comunidad - Videojuegos</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Link al archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Videojuegos</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="comentarios.html">Comunidad</a></li>
+                <li><a href="top-juegos.html">Top Juegos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Comunidad -->
+    <section class="community">
+        <div class="container">
+            <h1>Comunidad de Videojuegos</h1>
+            <p>Únete a la conversación, comparte tus experiencias, y comenta sobre tus juegos favoritos con otros jugadores.</p>
+
+            <!-- Hilo de comentarios -->
+            <div class="thread">
+                <h2>Hilo Principal: "The Witcher 3: Wild Hunt" - ¿Qué opinas?</h2>
+                <div class="post">
+                    <div class="user-info">
+                        <img src="assets/user1.png" alt="Usuario 1" class="user-avatar">
+                        <div class="user-details">
+                            <p class="user-name">Juan Pérez</p>
+                            <p class="post-date">15 de abril de 2025</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>¡Acabo de terminar el juego "The Witcher 3"! ¿Alguien más lo ha jugado? ¡Es increíble! 😍</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="btn reply-btn">Responder</button>
+                        <button class="btn like-btn">Me gusta</button>
+                    </div>
+                </div>
+
+                <!-- Respuesta 1 -->
+                <div class="post reply">
+                    <div class="user-info">
+                        <img src="assets/user2.png" alt="Usuario 2" class="user-avatar">
+                        <div class="user-details">
+                            <p class="user-name">Maria González</p>
+                            <p class="post-date">15 de abril de 2025</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>¡Sí! También lo jugué, pero me tomó bastante tiempo completar todas las misiones secundarias. ¡El mapa es enorme! 😲</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="btn reply-btn">Responder</button>
+                        <button class="btn like-btn">Me gusta</button>
+                    </div>
+                </div>
+
+                <!-- Respuesta 2 -->
+                <div class="post reply">
+                    <div class="user-info">
+                        <img src="assets/user3.png" alt="Usuario 3" class="user-avatar">
+                        <div class="user-details">
+                            <p class="user-name">Carlos Ruiz</p>
+                            <p class="post-date">16 de abril de 2025</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>¡Totalmente de acuerdo! Lo mejor es la historia, me encanta cómo se desenvuelven los personajes principales. ¿Ya probaste el DLC de "Blood and Wine"?</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="btn reply-btn">Responder</button>
+                        <button class="btn like-btn">Me gusta</button>
+                    </div>
+                </div>
+
+                <!-- Respuesta 3 -->
+                <div class="post reply">
+                    <div class="user-info">
+                        <img src="assets/user4.png" alt="Usuario 4" class="user-avatar">
+                        <div class="user-details">
+                            <p class="user-name">Lucía Rodríguez</p>
+                            <p class="post-date">17 de abril de 2025</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>¡Sí! El DLC "Blood and Wine" es espectacular. Las misiones y la ambientación son geniales. ¡Definitivamente lo recomiendo!</p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="btn reply-btn">Responder</button>
+                        <button class="btn like-btn">Me gusta</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nuevo comentario -->
+            <div class="new-comment">
+                <h3>Deja tu comentario</h3>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="comment-text">Tu comentario:</label>
+                        <textarea id="comment-text" name="comment-text" rows="5" placeholder="Escribe tu comentario..."></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Enviar Comentario</button>
+                </form>
+            </div>
+
+            <!-- Sección de otros hilos populares -->
+            <div class="popular-threads">
+                <h3>Hilos Populares</h3>
+                <ul>
+                    <li><a href="#">"The Last of Us" - ¿Es el mejor juego de PS4?</a></li>
+                    <li><a href="#">"Red Dead Redemption 2" - ¿Vale la pena jugarlo?</a></li>
+                    <li><a href="#">"God of War" - El regreso de Kratos</a></li>
+                    <li><a href="#">"Dark Souls" - ¿Es tan difícil como dicen?</a></li>
+                    <li><a href="#">"Cyberpunk 2077" - ¿Cómo está ahora después de la actualización?</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Videojuegos. Todos los derechos reservados. | <a href="privacy-policy.html">Política de Privacidad</a></p>
+        </div>
+    </footer>
+</body>
+</html>

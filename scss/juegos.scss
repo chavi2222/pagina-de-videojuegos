@@ -1,0 +1,9 @@
+@use 'variables' as v;
+
+.juegos {
+  background-color: v.$color-accent;
+  color: v.$color-white;
+  padding: 3rem;
+  display: grid;
+  gap: 2rem;
+}
